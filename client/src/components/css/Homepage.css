@@ -1,0 +1,282 @@
+.Homepage {
+    display: flex;
+    height: 100vh;
+    
+}
+.Homepage .user-info{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.Homepage .login-message .icon-con{
+   
+    
+
+}
+.Homepage .login-message .icon-con .icon{
+    font-size: 3rem;
+    color: green;
+   
+}
+.Homepage .login-message a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.Homepage .login-message {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    align-items: center;
+    height: 100vh;
+}
+.Homepage .Home-left{
+    width: 30vw;
+    margin-right: 2px;
+}
+.Homepage .Home-right{
+    width: 70vw;
+
+}
+.user-info{
+    background: rgba(0,0,0,0.1);
+    height: 60px;
+    padding: 15px ;
+}
+.user-info a{
+    text-decoration: none;
+}
+.user-info span{
+    background-image: url('../User/image/profile.png');
+
+    font-weight: 500;
+    font-size: 1.3rem;
+    width: 150px;
+    text-transform: capitalize;
+    color: black;
+letter-spacing: 2px;
+
+}
+.user-info span .icon{
+    margin-right: 5px;
+}
+.search-bar{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    /* border-bottom: 0.03px solid grey; */
+}
+.search-bar .input-group{
+
+    /* padding: 10px;
+    margin: 10px; */
+    border-radius: 40px;
+}
+.search-bar .input-group label{
+    width: 20%;
+    font-size: 1.2rem;
+    margin:0 0 0 20px ;
+}
+.search-bar .input-group input{
+    width: 70%;
+    border: none;
+    outline: none;
+}
+.search-bar .input-group input:focus{
+
+    box-shadow: none;
+    
+}
+.search-bar .input-group label:hover,.search-bar .input-group input:hover{
+    cursor: pointer;
+}
+.usermessages{
+    display: flex;
+    flex-direction: column;
+   max-height: 70vh;
+   overflow-y:scroll;
+   /* margin: 20px; */
+
+}
+.usermessages .user{
+ display: flex;
+padding: 0 10px;
+color: black;
+
+}
+
+.usermessages .user .user-icon{
+     margin-top: 10px;
+   
+}
+.usermessages .user .user-icon img{
+   margin: 5px 0 0 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.usermessages .user .user-name{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+.usermessages .user .user-detail{
+    padding:20px;
+   display: flex;
+   flex-direction: column;
+    width: 100%;
+   padding-bottom: 20px;
+    border-bottom: 0.1px solid grey;
+}
+.usermessages .user:hover{
+   background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.usermessages a{
+    text-decoration: none;
+}
+.nousers{
+    margin-top: 50% ;
+    text-align: center;
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    width: 100vw;
+    gap:20px;
+    background: rgba(0,0,0,0.1);
+}
+.user-msg{
+  
+    position: relative;
+}
+.last-msg-time{
+    right: 0;
+    position: absolute;
+    
+}
+::-webkit-scrollbar{
+   width: 2px;
+ 
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: grey;
+}
+::-webkit-scrollbar-track{
+    
+}
+.sent{
+    color: brown;
+}
+.received{
+    color: green;
+}
+#tab{
+    display: flex;
+    justify-content: flex-end;
+    /* border: none; */
+    border-bottom: 0.3px solid grey;
+    height: 50px;
+
+    background: rgba(0,0,0,0.1);
+}
+#tab button{
+    border: none;
+    background: none;
+    color: black;
+    padding: 10px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.nav  .active{
+   
+    border-bottom: 2px solid green !important;
+    color: blue !important;
+}
+.profile{
+    margin-top: 40px;
+}
+.profile span{
+    font-size: 2rem;
+    border-bottom:2px solid grey ;
+}
+.profile form{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+   margin: 0 20px;
+}
+.profile .form-con form .img-con{
+    display: flex;
+    gap: 20px;
+   position: relative;
+padding-bottom: 20px;
+}
+.profile .form-con form .img-con label{
+    font-size: 20px;
+    left: 150px;
+    position: absolute;
+    cursor: pointer;
+    background: orange;
+    padding:5px 10px;
+    border-radius: 100%;
+}
+.profile .user-update-form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.profile .form-con form img{
+    background: green;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+.form-con{
+    position: relative;
+}
+.form-con .toast-con{
+    max-width: 200px;
+    right: 0;
+    position: absolute;
+    font-size: 12px;
+ 
+   
+}
+.profile .form-con form .file-upload{
+   display: none;
+    
+}
+.error{
+    color: red;
+    font-weight: bold;
+}
+.submit{
+    width: 40px;
+    height: 30px;
+}
+.new-msg-count{
+margin-left:40px;
+    background: orange;
+    border-radius: 100%;
+    padding:1px 6px;
+    font-weight: bold;
+    color: white;
+}

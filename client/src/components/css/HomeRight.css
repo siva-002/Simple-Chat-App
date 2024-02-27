@@ -1,0 +1,108 @@
+.nouserselect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size:2rem;
+    font-weight: 800;
+    background-image: url(../User/image/bg.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+
+}
+.chat{
+    height: 100vh;
+}
+.chat-header{
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    height: 60px;
+    padding: 10px;
+    font-size: 1.3rem;
+    display: flex;
+}
+.chat-header .icon-body{
+
+}
+
+.chat-header .icon-body img{
+    margin: 0 10px 0 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+.chat-header span{
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-transform: capitalize;
+   letter-spacing: 2px;
+}
+.chat-body{
+    height: 80%;
+    overflow-y: scroll;
+    background: rgba(0,0,0,0.1);
+    margin: 10px;
+}
+.chat-body .msgloading{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-weight: 600;
+}
+.chat-footer form input{
+    width: 90%;
+}
+.chat-footer form{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.chat-body .right{
+   display: flex;
+   justify-content: flex-end;
+   
+}
+.chat-body .left{
+
+   display: flex;
+   justify-content: flex-start;
+   
+}
+.chat-body .right .con{
+  
+    max-width: 50%;
+    min-width: 100px;
+    word-wrap: break-word;
+    padding: 10px;
+    background-color: rgba(250, 6, 250, 0.466);
+    position: relative;
+    border-radius: 20px;
+    margin: 10px;
+}
+.chat-body .left .con{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    min-width: 100px;
+    word-wrap: break-word;
+    padding: 10px;
+    background-color: rgba(217, 255, 5, 0.4);
+    position: relative;
+    border-radius: 20px;
+    margin: 10px;
+}
+.chat-body .right .con .msg,.chat-body .left .con .msg{
+    font-size: 20px;
+}
+.chat-body .right .con .time,.chat-body .left .con .time{
+    padding-top: 10px;
+    right: 10px;
+    bottom: 0;
+    position: absolute;
+    font-size: 10px;
+}
+
+

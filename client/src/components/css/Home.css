@@ -1,0 +1,92 @@
+.signinpage ,.signuppage{
+   height: 100vh;
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(132deg, rgb(251, 165, 116) 0.00%, rgb(216, 245, 251) 100.00%);
+   
+    
+}
+.signinpage .signinform-container,.signuppage .signupform-container{
+    margin: 0 20px;
+    background: linear-gradient(132deg, rgb(207, 69, 32) 0.00%, rgb(71, 55, 40) 100.00%);
+    padding: 40px;
+    box-shadow: 0px 5px 10px 0px black;
+    position: relative;
+}
+.signinpage .signinform div,.signuppage .signupform div{
+    padding: 10px;
+}
+.signinpage .signinform div .form-control,.signuppage .signupform div .form-control{
+   border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    margin-top: 5px;
+   color:white;
+   
+}
+.signinpage .signinform div .form-control:focus,.signuppage .signupform div .form-control:focus{
+    box-shadow: none;
+}
+.signinpage .signinform .inp label,.signuppage .signupform .inp label{
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transform: scale(0.9);
+    
+}
+.signinpage .signinform div:nth-child(4)>button,.signuppage .signupform div:nth-child(4)>button{
+    margin: 0 10px 0 0;
+}
+.signinpage .signinform div:nth-child(3)>span {
+   display: block;
+    text-align: right;
+}
+.signinpage .signinform div a,.signuppage .signupform div a{
+    color:orange;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.toast-notification{
+width: 200px;
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    
+}
+.forgot-password form{
+ 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.forgot-password{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+
+ 
+}
+.forgot-password .stepper{
+    width: 300px;
+}
+.pass-input{
+   position: relative;
+}
+.pass-input .info .error{
+
+    font-size: 13px;
+}
+ .info a{
+    text-decoration: none;
+}
+.info a,.info span{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
